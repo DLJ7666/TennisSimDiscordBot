@@ -69,10 +69,11 @@ public class Partido {
 		this.puntosTenista1 = puntosTenista1;
 		this.puntosTenista2 = puntosTenista2;
 	}
-	@Override
+	
 	public String toString() {
 		return "Partido " + getId() + ":\n"
-				+ getTenista1() + " vs " + getTenista2() + "\n"
+				+ getTenista1().getNombre() + " " + getTenista1().getApellido() + " vs "
+				+ getTenista2().getNombre() + " " + getTenista2().getApellido() + "\n"
 				+ "Sets: " + getSetsTenista1() + "-" + getSetsTenista2() + "\n"
 				+ "Juegos: " + getJuegosTenista1() + "-" + getJuegosTenista2() + "\n"
 				+ "Puntos: " + getPuntosTenista1() + "-" + getPuntosTenista2();
