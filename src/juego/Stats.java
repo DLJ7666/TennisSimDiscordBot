@@ -64,4 +64,9 @@ public class Stats {
 		this.resistencia = resistencia;
 	}
 	
+	public String toString() {
+		return "Stats [getDerecha()=" + getDerecha() + ", getExperiencia()=" + getExperiencia() + ", getReves()="
+				+ getReves() + ", getSaque()=" + getSaque() + ", getDejada()=" + getDejada() + ", getFisico()="
+				+ getFisico() + ", getResistencia()=" + getResistencia() + "]";
+	}
 }
